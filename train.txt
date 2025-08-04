@@ -1,0 +1,4 @@
+hello:Hi there!
+how are you:I'm doing well, thank you!
+what's your name:I'm a chatbot.
+bye:Goodbye!
