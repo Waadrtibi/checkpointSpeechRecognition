@@ -3,8 +3,8 @@ matplotlib
 seaborn
 json5
 unidecode
-
 streamlit
+pyaudio
 nltk
 speechrecognition
 pyttsx3
