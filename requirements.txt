@@ -4,6 +4,7 @@ seaborn
 json5
 unidecode
 streamlit
+pipwin
 pyaudio
 nltk
 speechrecognition
