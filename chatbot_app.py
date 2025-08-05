@@ -1,8 +1,10 @@
 import streamlit as st
 import nltk
-nltk.download('punkt')
+import os
 
-# Charger les données
+nltk.download('punkt', quiet=True)
+
+# Charger les données avec chemin relatif
 def load_data(filepath):
     pairs = {}
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -25,8 +27,9 @@ def main():
     st.title("💬 Chatbot simple")
     st.write("Posez une question en texte et recevez une réponse instantanée.")
     
-    data = load_data("C:/Users/Waad RTIBI/CheckPoint_SR/train.txt")
-
+    # Chemin relatif au fichier train.txt dans le même dossier que ce script
+    data_path = os.path.join(os.path.dirname(__file__), "train.txt")
+    data = load_data(data_path)
 
     user_input = st.text_input("Entrez votre message :")
     if st.button("Envoyer"):
