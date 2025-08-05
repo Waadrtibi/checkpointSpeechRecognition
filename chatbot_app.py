@@ -22,7 +22,7 @@ def chatbot_response(user_input, data):
 
 # Interface Streamlit
 def main():
-    st.title("💬 Chatbot simple (Texte uniquement)")
+    st.title("💬 Chatbot simple")
     st.write("Posez une question en texte et recevez une réponse instantanée.")
     
     data = load_data("C:/Users/Waad RTIBI/CheckPoint_SR/train.txt")
